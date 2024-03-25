@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(Computertechnik NONE)
+project(CheatsheetTemplate NONE)
 include(UseLATEX)
 
 add_custom_target(
@@ -12,8 +12,8 @@ add_custom_target(
 set(IMAGE_DIRS
     img
     #Add subdirectories here
-    #img/logic
-	#img/rca
+    img/logic
+	img/rca
 )
 
 add_latex_document(
