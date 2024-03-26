@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(CheatsheetTemplate NONE)
+project(Computertechnik NONE)
 include(UseLATEX)
 
 add_custom_target(
@@ -17,7 +17,7 @@ set(IMAGE_DIRS
 )
 
 add_latex_document(
-    Computersetechnik.tex
+    Computertechnik.tex
     FORCE_PDF
     IMAGE_DIRS ${IMAGE_DIRS}
     DEPENDS writegitid
