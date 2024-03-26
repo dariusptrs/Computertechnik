@@ -281,14 +281,25 @@ long long & 8+ Bytes & 8 Bytes
 \begin{minipage}{\columnwidth}
 \subsection{Interrupts}
 Beim Auftreten eines Interrupts wird aus dem derzeit ausgeführten Code in die Interrupt-Service-Routine (ISR) gesprungen. Dieses Verhalten kann genutzt werden, um z.B. beim Drücken eines Tasters oder nach einer bestimmten Zeit eine Funktion aufzurufen. Dabei muss nicht ständig überprüft werden, ob ein Interrupt auftritt (das springen in die ISR geschieht automatisch).
-\subsection{Timer-Interrupts}
+\end{minipage}
+\subsubsection{Interrupt mit Taster}
+\begin{enumerate}
+\item Gewünschten Port als Eingang konfigurieren
+\item Interrupts global freischalten
+\item Spez. Interrupt im EIMSK-Register freischalten
+\item Im EICRA konfigurieren, welcher Pegelzustand des spez. Interrupt berücksichtigt wird
+\item ISR-Funktion schreiben: \\
+\texttt{ISR(INT\textit{n}\_vect) \{ \\ \dots \\ \} }
+\end{enumerate}
+\subsubsection{Drehgeber}
+\texttt{TODO}
+\subsubsection{Timer-Interrupts}
 Der Zähler \texttt{TCNT$n$} wird mit der Frequenz $f=\frac{\text{clk}}{\text{Prescaler}}$ um 1 erhöht. \\
 Überlauf-Interrupt, wenn \texttt{TCNT$n$}...
 \begin{itemize}
 \item von $2^8-1$ auf $2^8=256$ erhöht wird (bei $n\in \{0,2\}$)
 \item von $2^{16}-1$ auf $2^{16}=65536$ erhöht wird (bei $n\in \{1,3\}$)
 \end{itemize}
-\end{minipage}
 
 %Formelsammlung
 \newpage

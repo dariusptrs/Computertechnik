@@ -17,7 +17,7 @@ set(IMAGE_DIRS
 )
 
 add_latex_document(
-    Computertechnik.tex
+    Computersetechnik.tex
     FORCE_PDF
     IMAGE_DIRS ${IMAGE_DIRS}
     DEPENDS writegitid
