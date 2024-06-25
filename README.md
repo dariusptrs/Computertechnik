@@ -1,6 +1,6 @@
 # Computertechnik
 
-[![Actions Status](https://github.com/dariusptrs/Computertechnik/workflows/CI/badge.svg)](https://github.com/dariusptrs/Computertechnik)
+[![Actions Status](https://github.com/latex4ei/Computertechnik/workflows/CI/badge.svg)](https://github.com/latex4ei/Computertechnik)
 [![Join the chat at https://gitter.im/LaTeX4Ei/Lobby](https://badges.gitter.im/LaTeX4Ei/Lobby.svg)](https://gitter.im/LaTeX4Ei/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Write beautiful latex cheat sheets with minimal effort.
